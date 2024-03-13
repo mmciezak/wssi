@@ -1,34 +1,34 @@
 # Zadanie 1
   Które z następujących zadań wymagają w Twojej opinii inteligencji od człowieka:
   
-    • wypełnianie deklaracji PIT,
-    • streszczanie tekstu,
-    • tłumaczenie tekstu,
-    • klasyfikacja tekstu do kategorii tematycznych,
-    • odpowiadanie na proste pytania zadawane w języku naturalnym (np. polskim),
-    • układanie rozkładu jazdy transportu miejskiego,
-    • programowanie (pisanie programów komputerowych),
-    • „programowanie” kanałów telewizyjnych,
-    • testowanie oprogramowania,
-    • komponowanie muzyki,
-    • rozwiązywanie układów równań,
-    • symboliczne obliczanie pochodnych funkcji,
-    • symboliczne całkowanie funkcji,
-    • kierowanie samochodem.
+    • wypełnianie deklaracji PIT, - tak, sztuczna inteligencja może pomylić sie przy wpisywaniu ważnych danych osobowych
+    • streszczanie tekstu - nie
+    • tłumaczenie tekstu - tak, przy bardziej skomplikowanych tekstach
+    • klasyfikacja tekstu do kategorii tematycznych - nie
+    • odpowiadanie na proste pytania zadawane w języku naturalnym (np. polskim) - nie
+    • układanie rozkładu jazdy transportu miejskiego - nie
+    • programowanie (pisanie programów komputerowych) - zależy od złozoności programu, ale w większości tak
+    • „programowanie” kanałów telewizyjnych - nie
+    • testowanie oprogramowania - tak
+    • komponowanie muzyki - tak
+    • rozwiązywanie układów równań - nie
+    • symboliczne obliczanie pochodnych funkcji - nie
+    • symboliczne całkowanie funkcji - nie
+    • kierowanie samochodem - nie
 # Zadanie 2
   Które z następujących problemów można uznać za mieszczące się w zakresie sztucznej
   inteligencji:
   
-    • streszczanie tekstu,
-    • tłumaczenie tekstu,
-    • klasyfikacja tekstu do kategorii tematycznych,
-    • odpowiadanie na proste pytania zadawane w języku naturalnym,
-    • rozwiązywanie układów równań,
-    • układanie rozkładu jazdy,
-    • rozwiązywanie układów równań liniowych,
-    • symboliczne obliczanie pochodnych,
-    • symboliczne całkowanie,
-    • kierowanie samochodem.
+    • streszczanie tekstu - tak
+    • tłumaczenie tekstu - tak, ale przy bardziej skomplikoanych tekstach moga być problemy w tłumaczeniu niektórych słów
+    • klasyfikacja tekstu do kategorii tematycznych - tak, chyba że tekst źródłowy należy do kilku różnych kategorii tematycznych
+    • odpowiadanie na proste pytania zadawane w języku naturalnym - tak
+    • rozwiązywanie układów równań - tak
+    • układanie rozkładu jazdy - tak
+    • rozwiązywanie układów równań liniowych - tak
+    • symboliczne obliczanie pochodnych - tak
+    • symboliczne całkowanie - tak
+    • kierowanie samochodem - w miejscach sterowanych przez sygnalizacje świetlna
 # Zadanie 3
   Które z poniższych rodzajów komunikacyjnego zachowania człowieka mogą być
   obecnie skutecznie imitowane przez sztuczne systemy (odpowiednio oprogramowane
