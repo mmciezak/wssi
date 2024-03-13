@@ -1,5 +1,6 @@
 # Zadanie 1
   Które z następujących zadań wymagają w Twojej opinii inteligencji od człowieka:
+  
     • wypełnianie deklaracji PIT,
     • streszczanie tekstu,
     • tłumaczenie tekstu,
@@ -17,6 +18,7 @@
 # Zadanie 2
   Które z następujących problemów można uznać za mieszczące się w zakresie sztucznej
   inteligencji:
+  
     • streszczanie tekstu,
     • tłumaczenie tekstu,
     • klasyfikacja tekstu do kategorii tematycznych,
@@ -31,6 +33,7 @@
   Które z poniższych rodzajów komunikacyjnego zachowania człowieka mogą być
   obecnie skutecznie imitowane przez sztuczne systemy (odpowiednio oprogramowane
   maszyny):
+  
     • rozmowa towarzyska,
     • dyskusja polityczna,
     • dyskusja naukowa,
@@ -51,8 +54,8 @@ f) zadawanie pytań powstających z twoich wypowiedzi,
 g) odpowiadanie wymijająco, ogólnikowo,
 h) częsta zmiana tematu rozmowy,
 i) problemy z utrzymaniem wątków.
-3. Sporządź raport ze spostrzeżeń.
-4. Na podstawie powyższych obserwacji, w grupie dwóch osób spróbujcie prze-
+4. Sporządź raport ze spostrzeżeń.
+5. Na podstawie powyższych obserwacji, w grupie dwóch osób spróbujcie prze-
 widzieć zachowania dwóch rozmawiających ze sobą chatbotów (przepisując ich
 wzajemne odpowiedzi).
 # 5. Zdenerwuj bota 😊😊
