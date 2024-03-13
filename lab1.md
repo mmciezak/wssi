@@ -39,6 +39,9 @@
     • dyskusja naukowa,
     • odpowiadanie na pytania klientów w telefonicznej infolinii,
     • odpowiadanie na pytania klientów w internetowej infolinii.
+
+    Wszystkie moga być imitowane, ale w zależności od tematu można rozróżnić człowieka od sztucznej inteligencji. Np rozmowa towarzyska może wyglądać "podręcznikowo", a na niektóre tematy naukowe bot może nie posiadać wystarczająco informacji
+    
 # Zadanie 4
 Do zadań skorzystaj z załączonej listy Chatbotów (Chatterbotów) lub znajdź własne.
 1. Przeprowadź rozmowę z chatbotem. Spróbuj zdefiniować różnice pomiędzy
