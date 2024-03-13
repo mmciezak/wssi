@@ -1,4 +1,4 @@
-#Zadanie 1
+# Zadanie 1
   Które z następujących zadań wymagają w Twojej opinii inteligencji od człowieka:
     • wypełnianie deklaracji PIT,
     • streszczanie tekstu,
@@ -14,7 +14,7 @@
     • symboliczne obliczanie pochodnych funkcji,
     • symboliczne całkowanie funkcji,
     • kierowanie samochodem.
-Zadanie 2
+# Zadanie 2
   Które z następujących problemów można uznać za mieszczące się w zakresie sztucznej
   inteligencji:
     • streszczanie tekstu,
@@ -27,7 +27,7 @@ Zadanie 2
     • symboliczne obliczanie pochodnych,
     • symboliczne całkowanie,
     • kierowanie samochodem.
-Zadanie 3
+# Zadanie 3
   Które z poniższych rodzajów komunikacyjnego zachowania człowieka mogą być
   obecnie skutecznie imitowane przez sztuczne systemy (odpowiednio oprogramowane
   maszyny):
@@ -36,7 +36,7 @@ Zadanie 3
     • dyskusja naukowa,
     • odpowiadanie na pytania klientów w telefonicznej infolinii,
     • odpowiadanie na pytania klientów w internetowej infolinii.
-Zadanie 4
+# Zadanie 4
 Do zadań skorzystaj z załączonej listy Chatbotów (Chatterbotów) lub znajdź własne.
 1. Przeprowadź rozmowę z chatbotem. Spróbuj zdefiniować różnice pomiędzy
 botem udającym człowieka (przygotowywanym na test Turinga) a botem
@@ -55,7 +55,7 @@ i) problemy z utrzymaniem wątków.
 4. Na podstawie powyższych obserwacji, w grupie dwóch osób spróbujcie prze-
 widzieć zachowania dwóch rozmawiających ze sobą chatbotów (przepisując ich
 wzajemne odpowiedzi).
-5. Zdenerwuj bota 😊😊
+# 5. Zdenerwuj bota 😊😊
 Lista startowa chatbotów:
 • cleverbot.com
 • www.chatbot4u.com
