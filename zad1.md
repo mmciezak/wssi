@@ -75,13 +75,22 @@
 
   odpowiadanie na pytania klientów w internetowej infolinii:
     Podobnie jak w przypadku telefonicznej infolinii, chatboty mogą być wykorzystywane do automatycznego udzielania odpowiedzi na pytania klientów na stronach internetowych.
-    
+
 # Zadanie 4
 Do zadań skorzystaj z załączonej listy Chatbotów (Chatterbotów) lub znajdź własne.
 1. Przeprowadź rozmowę z chatbotem. Spróbuj zdefiniować różnice pomiędzy
 botem udającym człowieka (przygotowywanym na test Turinga) a botem
 „asystentem, służącym”.
-2. Sprawdź dwa boty z obu z tych rodzajów na występowanie zachowań:
+
+bot udający człowieka:
+Głównym celem takiego bota jest przekonanie ludzi, że rozmawiają z innym człowiekiem, a nie z maszyną. Jest to często wykorzystywane w kontekście testów Turinga, które sprawdzają zdolność bota do symulowania ludzkiej interakcji. Stara się utrzymać rozmowę w sposób naturalny, reagując na pytania i komentarze użytkownika w sposób, który imituje ludzką konwersację. 
+
+bot asystent:
+Ten rodzaj bota ma za zadanie udzielać pomocy, informacji lub wykonywać określone zadania na zlecenie użytkownika. Nie jest zwykle zaprogramowany do udawania człowieka, ale raczej do dostarczania praktycznej pomocy w określonych dziedzinach. Zwykle bot dostarcza odpowiedź lub wykonuje żądane działanie bez próby udawania ludzkiej interakcji. Nie jest aż tak zaawansowany jak bot mający udawać człowieka.
+
+![obraz](https://github.com/mmciezak/wssi/assets/127038795/b8fb99aa-59fe-44e7-89b2-2d6c5893c104)
+
+3. Sprawdź dwa boty z obu z tych rodzajów na występowanie zachowań:
 a) opowiadanie żartów,
 b) przytaczanie cytatów z twoich wypowiedzi, lub znanych osób,
 c) nawiązywanie wypowiedzi do słów kluczowych,
@@ -91,11 +100,40 @@ f) zadawanie pytań powstających z twoich wypowiedzi,
 g) odpowiadanie wymijająco, ogólnikowo,
 h) częsta zmiana tematu rozmowy,
 i) problemy z utrzymaniem wątków.
+
+1)
+![obraz](https://github.com/mmciezak/wssi/assets/127038795/0e7f7408-036c-47cb-94e1-4bd47b622ba0)
+![obraz](https://github.com/mmciezak/wssi/assets/127038795/e39241b1-d937-4ddc-bdde-3e7a69acd8e4)
+![obraz](https://github.com/mmciezak/wssi/assets/127038795/9cfe4a6b-0fe1-475a-aa3b-eac4fa1bb796)
+![obraz](https://github.com/mmciezak/wssi/assets/127038795/e7634e6a-9a02-48b5-b64b-3c777f29cdac)
+![obraz](https://github.com/mmciezak/wssi/assets/127038795/8e3aa8d8-af0d-4698-8148-8988803ea272)
+
+2)
+![obraz](https://github.com/mmciezak/wssi/assets/127038795/33c56bc5-1aed-474f-833f-03bc02b14016)
+![obraz](https://github.com/mmciezak/wssi/assets/127038795/55d9b81f-5f42-40c8-8092-b23242e59615)
+![obraz](https://github.com/mmciezak/wssi/assets/127038795/6b49eb07-fa76-455f-9158-18ac5894136e)
+
+
 4. Sporządź raport ze spostrzeżeń.
-5. Na podstawie powyższych obserwacji, w grupie dwóch osób spróbujcie prze-
+Oba boty w załączonych zdjęciach w niektórych momentach miały problem z utrzymaniem rozmowy na dany temat, po kilka razy powtarzaly to samo pytanie, tylko inaczej sformułowane.
+Opowiadane żarty były nieśmieszne. Prawidłowo został przytoczony cytat Sokratesa przez bota nr 1.
+Bot nr 1 poprawnie nawiązywał swoje wypowiedzi do wpisywanych wiadomości, natomiast bot nr 2 był bardzo trudny w rozmowie, ciągle zmieniał temat lub zadawał te same pytania.
+6. Na podstawie powyższych obserwacji, w grupie dwóch osób spróbujcie prze-
 widzieć zachowania dwóch rozmawiających ze sobą chatbotów (przepisując ich
 wzajemne odpowiedzi).
+
+![obraz](https://github.com/mmciezak/wssi/assets/127038795/8af5a4e9-2e5e-48d1-b963-82259577d38f)
+![obraz](https://github.com/mmciezak/wssi/assets/127038795/22f30c85-896e-4efb-95a2-2947d97afbcb)
+![obraz](https://github.com/mmciezak/wssi/assets/127038795/0086b52f-cd98-4ee4-acce-a0732362bab6)
+![obraz](https://github.com/mmciezak/wssi/assets/127038795/d7b7dc81-100a-4988-bc37-6ab9f36fccb6)
+
+
 # 5. Zdenerwuj bota 😊😊
+![obraz](https://github.com/mmciezak/wssi/assets/127038795/d7bfd928-1f20-4847-af94-ce8a97c3fcf4)
+![obraz](https://github.com/mmciezak/wssi/assets/127038795/5a33957a-71c8-468d-bfe6-49f004fe0006)
+
+
+
 Lista startowa chatbotów:
 • cleverbot.com
 • www.chatbot4u.com
