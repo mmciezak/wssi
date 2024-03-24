@@ -1,3 +1,15 @@
+zadanie 1
+1.1
+A - x i y to rodzeństwo(rodzone)
+B - kuzyni (y to syn brata matki x)
+C - x jest babcią wnuczki y
+D - y to przybrany ojciec lub matka dla x
+E - przyrodnie rodzeństwo
+F - x to bratanica/bratanek dla y
+G - kazirodztwo (syn mlodszego brata y dla x / dziecko rodzica mlodszego brata x dla y)
+
+%zadanie 2
+
 mezczyzna(jan).
 mezczyzna(pawel).
 mezczyzna(maciek).
