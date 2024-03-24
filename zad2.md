@@ -1,42 +1,108 @@
-pogoda(lublin, lato, cieple).
-pogoda(lublin, zima, umiarkowana).
-pogoda(kair, lato, upalne).
-pogoda(kair, zima, bardzo_ciepla).
-pogoda(jakutsk, lato, umiarkowane).
-pogoda(jakutsk, zima, bardzo_mrozna).
+mezczyzna(jan).
+mezczyzna(pawel).
+mezczyzna(maciek).
+mezczyzna(tadeusz).
+mezczyzna(marcin).
+mezczyzna(kuba).
+mezczyzna(slawomir).
+mezczyzna(antoni).
 
-kobieta(grazyna).
+rodzic(antoni,grazyna).%dziadek pawla od strony matki
+rodzic(antonina,grazyna).
 
-mezczyzna(X) :-
-    \+ kobieta(X).
-	
+rodzic(slawomir,tadeusz).%bracia, dziadek pawla od strony ojca
+rodzic(slawomira,tadeusz).
+rodzic(slawomir,jan).
+rodzic(slawomira,jan).
 
-rodzic(jan,x).
-rodzic(grazyna,x).
+rodzic(jan, pawel). %rodzenstwo 
+rodzic(grazyna, pawel).
+rodzic(jan, maciek).
+rodzic(grazyna, maciek).
+rodzic(jan, ola).
+rodzic(grazyna, ola).
 
-rodzic(jan,y).
-rodzic(grazyna,y).
+rodzic(tadeusz, marcin). %kuzyn pawla
+rodzic(agnieszka, marcin).
 
-rodzic(pawel,z).
-rodzic(karolina,z).
 
-rodzenstwo(X,Y) :-
-    rodzic(jan,Y),
-    rodzic(jan,X).
+rodzic(jan, kuba). %przyrodni brat pawla i macka
+rodzic(malgosia, kuba).
 
-lubi(jan,pawel).
+kobieta(X) :-
+    \+ mezczyzna(X).
 
-przyjazn(X,Y) :-
-    lubi(X,Y),
-    lubi(Y,X).
+ojciec(X,Y) :- 
+    rodzic(X,Y), 
+    mezczyzna(X).
 
-niby_przyjazn(X,Y) :-
-    lubi(X,Y);
-    lubi(Y,X).
+matka(X,Y) :- 
+    rodzic(X,Y), 
+    kobieta(X).
 
-love(jan,grazyna).
-love(grazyna,jan).
+corka(X,Y) :- 
+    rodzic(Y,X), 
+    kobieta(X).
 
-true_love(X,Y) :-
-    love(X,Y),
-    love(Y,X).
+brat_rodzony(X,Y) :- 
+    rodzic(Z,X), 
+    rodzic(Z,Y), 
+    rodzic(W,X), 
+    rodzic(W,Y), 
+    mezczyzna(X), 
+    Z \= W,
+    X \= Y.
+
+brat_przyrodni(X,Y) :- 
+    rodzic(Z,X), 
+    rodzic(Z,Y), 
+    mezczyzna(X), 
+    \+ brat_rodzony(X,Y), 
+    X \= Y.
+
+kuzyn(X,Y) :- 
+    rodzic(Z,X), 
+    rodzic(W,Y), 
+    (   
+    	brat_przyrodni(Z,W);
+    	brat_rodzony(Z,W)
+    ).
+
+dziadek_od_strony_ojca(X,Y) :- 
+    ojciec(Z,X), 
+    rodzic(Y,Z),
+	mezczyzna(Y).
+
+dziadek_od_strony_matki(X,Y) :- 
+    matka(Z,X), 
+    rodzic(Y,Z),
+    mezczyzna(Y).
+
+dziadek(X,Y) :- 
+    rodzic(Z,X), 
+    rodzic(Y,Z), 
+    mezczyzna(Y), 
+    X \= Y.
+
+babcia(X,Y) :- 
+    matka(X,Z), 
+    rodzic(Z,Y).
+
+wnuczka(X,Y) :- 
+    rodzic(X,Z), 
+    rodzic(Z,Y), 
+    kobieta(Y), 
+    X \= Y.
+
+przodek_do2pokolenia_wstecz(X,Y) :- 
+    rodzic(X,Z), 
+    rodzic(Z,Y).
+
+przodek_do3pokolenia_wstecz(X,Y) :- 
+    rodzic(X,Z), 
+    rodzic(Z,W), 
+    rodzic(W,Y).
+
+
+
+
