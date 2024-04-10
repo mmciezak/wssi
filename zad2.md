@@ -174,4 +174,18 @@ je(adam,orzeszki).
 
 ![obraz](https://github.com/mmciezak/wssi/assets/127038795/87337b93-baed-4dd0-bd4e-d3f1dce4017d)
 
+# zad 3 dla chetnych
+
+urodzil_sie(markus, 40).
+pompejanczyk(markus).
+zniszczono_pompeje(79).
+dlugosc_zycia(150).
+
+zyje(X, Y) :- 
+    urodzil_sie(X, Z), 
+    Z + 150 >= Y, 
+    \+ zniszczono_pompeje(_).
+
+
+![obraz](https://github.com/mmciezak/wssi/assets/127038795/9e07170a-2612-4630-95a4-6bf19b0cf240)
 
