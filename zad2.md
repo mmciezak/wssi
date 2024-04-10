@@ -1,4 +1,4 @@
-zadanie 1
+# zadanie 1
 1.1
 A - x i y to rodzeństwo(rodzone)
 B - kuzyni (y to syn brata matki x)
@@ -8,7 +8,7 @@ E - przyrodnie rodzeństwo
 F - x to bratanica/bratanek dla y
 G - kazirodztwo (syn mlodszego brata y dla x / dziecko rodzica mlodszego brata x dla y)
 
-%zadanie 2
+# zadanie 2
 
 mezczyzna(jan).
 mezczyzna(pawel).
@@ -116,5 +116,62 @@ przodek_do3pokolenia_wstecz(X,Y) :-
     rodzic(W,Y).
 
 
+# zad 1 dla chetnych
+
+czlowiek(markus).
+wladca(cezar).
+
+pompejanczyk(X) :- 
+    czlowiek(X),
+    rzymianin(X).
+
+pompejanczyk(markus).
+
+rzymianin(X) :-    
+    (   
+    lojalny_wobec(X,Y); 
+    nienawidzi(X,Y)
+    ),
+    wladca(Y).
+
+lojalny_wobec(X, Y) :- 
+    czlowiek(X), 
+    wladca(Y),
+    \+ probuje_zamachu(X, Y).
+
+nienawidzi(X, Y) :- 
+    probuje_zamachu(X, Y).
+
+probuje_zamachu(markus, cezar).
+
+
+![obraz](https://github.com/mmciezak/wssi/assets/127038795/72926c94-2f45-432c-9dad-561e11017231)
+
+# zad 2 dla chetnych
+
+jadalne(X) :-
+    pozywienie(X).
+
+lubi(jan, X) :- 
+    pozywienie(X).
+
+pozywienie(jablka).
+pozywienie(kurczak).
+pozywienie(orzeszki).
+
+nie_zyje(X) :-
+    je(X, Y),
+    \+ jadalne(Y).
+
+zyje_i_cos_zjadl(X, Y) :-
+    je(X, Y),
+    jadalne(Y).
+
+je(basia, X) :- 
+    je(adam, X).
+
+je(adam,orzeszki).
+
+![obraz](https://github.com/mmciezak/wssi/assets/127038795/87337b93-baed-4dd0-bd4e-d3f1dce4017d)
 
 
