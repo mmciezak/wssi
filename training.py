@@ -1,6 +1,6 @@
 from sklearn import datasets
 from sklearn.model_selection import train_test_split
-from decision_tree import DecisionTree
+from decision_tree_2 import DecisionTree
 import numpy as np
 
 data = datasets.load_iris()
@@ -19,3 +19,7 @@ def accuracy(y_test, y_pred):
 
 acc = accuracy(y_test, predictions)
 print(acc)
+
+
+y = np.array([3,1,2,3,6,8,7,1,2,3])
+print(np.bincount(y))
