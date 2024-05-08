@@ -22,7 +22,7 @@ class DecisionTree:
 
 
     def fit(self, x, y):
-        self.n_features = X.shape[1] if not self.n_features else min(X.shape[1],self.n_features)
+        self.n_features = x.shape[1] if not self.n_features else min(x.shape[1],self.n_features)
         self.root = self._grow_tree(x,y)
 
     def _grow_tree(self, x, y, depth=0):
@@ -52,8 +52,8 @@ class DecisionTree:
             x_column = x[:, feat_idx]
             threshold = np.unique(x_column)
 
-            for thr in thresholds:
-                gain = self._information_gain()
+            for thr in threshold:
+                gain = self._information_gain(y,x_column, thr)
 
                 if gain > best_gain:
                     best_gain = gain
@@ -66,7 +66,7 @@ class DecisionTree:
         #entropia rodzica
         parent_entropy = self._entropy(y)
 
-
+        return 1
         
 
     def _split(self, X_column, split_thresh):
