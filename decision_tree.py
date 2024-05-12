@@ -8,9 +8,8 @@ class Node:
         self.left = left
         self.right = right
         self.value = value
-        #self.value = None
 
-    def is_leaf_node(self): #czy Node jest leaf Nodem, powie nam jesli value istnieje to jest leaf node
+    def is_leaf_node(self):
         return self.value is not None
 
 class DecisionTree:
@@ -29,18 +28,13 @@ class DecisionTree:
         n_samples, n_feats = x.shape
         n_labels = len(np.unique(y))
         
-        #sprawdz punkt zatrzymania
         if depth>=self.max_depth or n_labels==1 or n_samples<self.min_samples_split:
             leaf_value = self._most_common_label(y)
             return Node(value=leaf_value)
             
         feat_idx = np.random.choice(n_feats, self.n_features, replace=False)
-
-        #znajdz najlepsze miejsce do podzialu
         best_thresh, best_feature = self._best_split(x,y,feat_idx)
 
-
-        #podziel na poddrzewa
         left_idxs, right_idxs = self._split(x[:, best_feature], best_thresh)
         left = self._grow_tree(x[left_idxs, :], y[left_idxs], depth+1)
         right = self._grow_tree(x[right_idxs, :], y[right_idxs], depth+1)
@@ -50,7 +44,6 @@ class DecisionTree:
         best_gain = -1
         split_idx, split_threshold = None, None
 
-        #sprawdzamy wszystkie mozliwe opcje i zwracamy najlepsza
         for feat_idx in feat_idxs:
             x_column = x[:, feat_idx]
             threshold = np.unique(x_column)
@@ -66,10 +59,9 @@ class DecisionTree:
         return split_threshold, split_idx
 
     def _information_gain(self, y, X_column, threshold):
-        #entropia rodzica
+        
         parent_entropy = self._entropy(y)
-
-        #dzieci
+        
         left_idxs, right_idxs = self._split(X_column,threshold)
         if len(left_idxs) == 0 or len(right_idxs) == 0:
             return 0
@@ -82,7 +74,6 @@ class DecisionTree:
         information_gain = parent_entropy - child_entropy
         return information_gain
 
-        
 
     def _split(self, X_column, split_thresh):
         left_idxs = np.argwhere(X_column<split_thresh).flatten()
@@ -104,12 +95,6 @@ class DecisionTree:
 
     def predict(self, X):#x
         return np.array([self._traverse_tree(x,self.root) for x in X])
-
-
-
-
-
-
 
     def _most_common_label(self, y):
         counter = Counter(y)
