@@ -21,5 +21,10 @@ acc = accuracy(y_test, predictions)
 print(acc)
 
 
-y = np.array([3,1,2,3,6,8,7,1,2,3])
-print(np.bincount(y))
+#a = np.array([3,1,2,3,6,8,7,1,2,3])
+#print(np.bincount(a))
+
+#b = np.arange(5)
+#print(b)
+#print(np.argwhere(b<3))
+#print(np.argwhere(b<3).flatten())
