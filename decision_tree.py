@@ -41,7 +41,10 @@ class DecisionTree:
 
 
         #podziel na poddrzewa
-        #...
+        left_idxs, right_idxs = self._split(x[:, best_feature], best_thresh)
+        left = self._grow_tree(x[left_idxs, :], y[left_idxs], depth+1)
+        right = self._grow_tree(x[right_idxs, :], y[right_idxs], depth+1)
+        return Node(best_feature,best_thresh,left,right)
 
     def _best_split(self,x,y,feat_idxs):
         best_gain = -1
@@ -58,7 +61,7 @@ class DecisionTree:
                 if gain > best_gain:
                     best_gain = gain
                     split_idx = feat_idx
-                    split__threshold = thr
+                    split_threshold = thr
 
         return split_threshold, split_idx
 
@@ -66,11 +69,25 @@ class DecisionTree:
         #entropia rodzica
         parent_entropy = self._entropy(y)
 
-        return 1
+        #dzieci
+        left_idxs, right_idxs = self._split(X_column,threshold)
+        if len(left_idxs) == 0 or len(right_idxs) == 0:
+            return 0
+
+        n = len(y)
+        n_l, n_r = len(left_idxs), len(right_idxs)
+        e_l, e_r = self._entropy(y[left_idxs]), self._entropy(y[right_idxs])
+        child_entropy = (n_l/n)*e_l+(n_r/n)*e_r
+
+        information_gain = parent_entropy - child_entropy
+        return information_gain
+
         
 
     def _split(self, X_column, split_thresh):
-        pass
+        left_idxs = np.argwhere(X_column<split_thresh).flatten()
+        right_idxs = np.argwhere(X_column>split_thresh).flatten()
+        return left_idxs, right_idxs
 
     def _entropy(self, y):#x
         hist = np.bincount(y)
@@ -78,7 +95,12 @@ class DecisionTree:
         return -np.sum([p*np.log(p) for p in ps if p>0])
 
     def _traverse_tree(self, x, node):
-        pass
+        if node.is_leaf_node():
+            return node.value
+
+        if x[node.feature] <= node.threshold:
+            return self._traverse_tree(x, node.left)
+        return self._traverse_tree(x,node.right)
 
     def predict(self, X):#x
         return np.array([self._traverse_tree(x,self.root) for x in X])
