@@ -48,10 +48,11 @@ class NeuralNetwork:
         node_labels = {}
 
         for i, size in enumerate(layer_sizes):
+            layer_top = (max_layer_size - size) / 2
             for j in range(size):
                 node_id = f"L{i}_N{j}"
                 G.add_node(node_id)
-                pos[node_id] = (i, -j + (max_layer_size - size) / 2)
+                pos[node_id] = (i, -(layer_top + j))
                 #node_labels[node_id] = f"N{j}"
 
         for i in range(len(layer_sizes) - 1):
