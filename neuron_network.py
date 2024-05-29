@@ -43,13 +43,15 @@ class NeuralNetwork:
         G = nx.DiGraph()
         layer_sizes = [layer[1] for layer in self.layers]
 
+        max_layer_size = max(layer_sizes)
         pos = {}
         node_labels = {}
+
         for i, size in enumerate(layer_sizes):
             for j in range(size):
                 node_id = f"L{i}_N{j}"
                 G.add_node(node_id)
-                pos[node_id] = (i, -j)
+                pos[node_id] = (i, -j + (max_layer_size - size) / 2)
                 #node_labels[node_id] = f"N{j}"
 
         for i in range(len(layer_sizes) - 1):
